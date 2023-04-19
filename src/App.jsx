@@ -3,8 +3,7 @@ import "./App.css";
 //import "bootstrap/dist/css/bootstrap.min.css";
 import Footer from "./Footer";
 import Header from "./Header";
-import Spinner from "./Spinner";
-
+//import Spinner from "./Spinner";
 
 export default function App() {
   const [month, setMonth] = useState("");
@@ -87,9 +86,7 @@ export default function App() {
               </button>
             </div>
           </figcaption>
-
         </figure>
-
       </div>
     );
   }
@@ -103,7 +100,6 @@ export default function App() {
   // shorthand for react fragment
   return (
     <>
-
       <div>
         <Header />
         <main>
@@ -132,12 +128,9 @@ export default function App() {
                 {" " + months[month]}
               </h2>
             )}
-
           </section>
           <section id="products">{filteredTrips.map(renderTrip)}</section>
-
         </main>
-
       </div>
       <Footer />
     </>
