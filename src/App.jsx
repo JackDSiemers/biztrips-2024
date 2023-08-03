@@ -103,6 +103,7 @@ export default function App() {
       <div>
         <Header />
         <main>
+          <h1>Welcome to biztrips</h1>
           <section id="filters">
             <label htmlFor="month">Filter by Month:</label>
             <select

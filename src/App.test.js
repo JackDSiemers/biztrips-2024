@@ -2,7 +2,34 @@ import { render, screen } from "@testing-library/react";
 import App from "./App";
 //import useFetch from "./services/useFetch";
 //import {getBusinessTrips} from "./services/tripsService";
+it("ret without crashing", () => {
+  shallow(<App />);
+});
 
+it("renders Account header", () => {
+  const wrapper = shallow(<App />);
+  const welcome = <h1>DWelcome to biztrips</h1>;
+  expect(wrapper.contains(welcome)).toEqual(true);
+});
+
+
+
+describe("SearchForm", () => {
+  test("renders SearchForm", () => {
+    render(<renderTrip/>);
+    expect(screen.getByRole("heading", { name: /location search/i })
+    ).toBeVisible();
+
+    expect(screen.getByRole("textbox", { name: /choose an origin \(optional\)/i })
+    ).toBeVisible();
+
+    expect(screen.getByRole("textbox", { name: /choose a destination/i})
+    ).toBeVisible();
+
+    expect(screen.getByRole("button", { name: /search/i })
+    ).toBeVisible();
+  });
+});
 //
 // test('the fetch fails with an error', async () => {
 //   await expect(getBusinessTrips()).rejects.toMatch('error');
