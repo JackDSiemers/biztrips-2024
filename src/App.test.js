@@ -16,7 +16,7 @@ test('App renders a heading', () => {
   render(<App />)
 
   screen.getByRole('heading', {
-    name: "Welcome to biztrips",
+    name: "Welcome to biztrips 2023",
   })
 
 });
