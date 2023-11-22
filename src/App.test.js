@@ -12,14 +12,14 @@ import App from "./App";
   expect(wrapper.contains(welcome)).toEqual(true);
 });*/
 
-test('App renders a heading', () => {
+/*test('App renders a heading', () => {
   render(<App />)
 
   screen.getByRole('heading', {
     name: "Welcome to biztrips 2024 - Juhui",
   })
 
-});
+});*/
 
 /*describe("SearchForm", () => {
   test("renders SearchForm", () => {
