@@ -12,7 +12,7 @@ export default function App() {
     {
       id: 1,
       title: "BT01",
-      description: "San Francisco World Trade Center on new Server/IOT/Client ",
+      description: "San Francisco World Trade Center on new Server/IOT/Client002",
       startTrip: [2021, 2, 13, 0, 0],
       endTrip: [2021, 2, 15, 16, 56],
       meetings: [
@@ -103,7 +103,7 @@ export default function App() {
       <div>
         <Header />
         <main>
-          <h1>Welcome to biztrips</h1>
+          <h1>Welcome to biztrips 2023</h1>
           <section id="filters">
             <label htmlFor="month">Filter by Month:</label>
             <select
